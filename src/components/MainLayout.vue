@@ -11,10 +11,13 @@
 		<ion-content>
 			<slot></slot>
 		</ion-content>
+		<ion-footer>
+        	<slot name="footerdata"></slot>
+    	</ion-footer>
 	</ion-page>
 </template>
 <script>
-	import {IonPage, IonHeader, IonToolbar, menuController, IonTitle, IonContent, IonIcon, IonButtons} from "@ionic/vue";
+	import {IonPage, IonHeader,IonFooter, IonToolbar, menuController, IonTitle, IonContent, IonIcon, IonButtons} from "@ionic/vue";
 	import { menu } from "ionicons/icons"
 	export default{
 		props:['pageTitle'],
@@ -25,7 +28,8 @@
 			IonToolbar,
 			IonContent,
 			IonButtons,
-			IonIcon
+			IonIcon,
+			IonFooter
 		},
 		data(){
 			return{

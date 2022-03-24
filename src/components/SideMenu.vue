@@ -15,19 +15,24 @@
 					<ion-icon :icon='build' slot='start'></ion-icon>
 					<ion-label>Todos</ion-label>
 				</ion-item>
+				<ion-item button @click="toPage('/users')">
+					<ion-icon :icon='user' slot='start'></ion-icon>
+					<ion-label>All Users</ion-label>
+				</ion-item>
 			</ion-list>
 		</ion-content>
 	</ion-menu>
 </template>
 <script>
 	import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonIcon, IonLabel, menuController} from "@ionic/vue";
-	import {  home, build} from "ionicons/icons";
+	import { home, build} from "ionicons/icons";
 	// import { UseRouter } from "vue-router";
 	export default{
 		data() {
 			return {
 				home,
 				build
+				
 			}
 		},
 		components: {

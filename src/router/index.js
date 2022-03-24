@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Home from "../pages/Home.vue";
 import Todos from "../pages/Todos.vue";
+import Users from "../pages/Users.vue";
+import TodoDetail from "../components/TodoDetail.vue";
+import AddOrUpdateUsers from "../components/AddOrUpdateUsers";
 
 const routes = [
   {
@@ -14,6 +17,18 @@ const routes = [
   {
     path:'/todos',
     component:Todos
+  },
+  {
+    path:'/users',
+    component:Users
+  },
+  {
+    path: "/add-or-update/:id",
+    component: AddOrUpdateUsers
+  }, 
+  {
+    path:'/todos/add',
+    component:TodoDetail
   },
 
 ]

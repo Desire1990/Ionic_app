@@ -1,15 +1,13 @@
 import Vue from 'vue';
 import {createStore} from 'vuex';
+import userModule from "./modules/users"
+import todoModule from "./modules/todos"
 
 const store = createStore({
-	state: {
-		myTodos:[],
-		users:null,
-		url:'http://localhost:8000/api'
+	modules:{
+        users: userModule,
+        myTodos:todoModule
 	},
-	mutations:{},
-	getters:{},
-	actions:{}
 })
 
 export default store

@@ -1,2 +1,2 @@
 # Ionic_app
-ionic to do list made with vuejs and javascriptz
+ionic to do list made with vuejs and javascript
